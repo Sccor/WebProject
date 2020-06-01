@@ -4,7 +4,8 @@ mkdir folderName
 git init
 git add fileName
 git rm --cached fileName (remove)
-git commit -m "la raison du commit"
+
+git commit -m "la raison du commit" (valider un ajout)
 git log
 
 git branch brancheName (création d'une branche)
