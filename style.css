@@ -8,7 +8,6 @@ body{
   margin: 0;
   /* background-image: url('https://www.mandatory.gg/wp-content/uploads/background/background-mandatory.jpg'); */
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSwY3jOOTGXMMS3YYcmjULumtsYmANpesAQDpCScTeVfBXHtv5M&usqp=CAU");
-  display: flex;
 }
 
 a{
@@ -37,7 +36,7 @@ header .logo{
   color: white;
 }
 
-header ul {
+header ul, footer ul {
   float: right;
   list-style-type: none;
   padding-top: 1em;
@@ -113,7 +112,7 @@ li{
   margin-right: 1em;
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 880px) {
   .header { text-align: center; position: relative; }
   .content { padding: 1em; }
   .header .container .logo h1 { float: none; margin: 0; }
@@ -123,6 +122,11 @@ li{
 .reseaux{
   width: 75px;
   height: 75px;
+}
+
+.fb{
+  width: 70px;
+  height: 60px;
 }
 
 .nous{
