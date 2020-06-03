@@ -33,7 +33,7 @@ header .logo{
 header ul {
   float: right;
   list-style-type: none;
-  padding-top: 1em;
+  padding-top: 1em;w²
   padding-right: 7em;
 }
 
@@ -49,8 +49,9 @@ li{
 }
 
 nav{
-  float: right;
   padding-top: 25px;
+  padding-bottom: 25px;
+  float: ;
 }
 
 main {
@@ -89,6 +90,7 @@ footer ul {
   list-style-type: none;
   padding-top: 1em;
   padding-right: 7em;
+  margin-bottom: 20px;
 }
 
 footer li a:hover {
@@ -100,6 +102,7 @@ li{
   margin-left: 15px;
   display: inline-block;
   margin-right: 1em;
+  margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 520px) {
@@ -112,6 +115,10 @@ li{
 .reseaux{
   width: 75px;
   height: 75px;
+}
+
+.titre{
+   color: #fff; 
 }
 
 .nous{
