@@ -3,20 +3,18 @@ html {
 	padding: 0;
 }
 
-body{
+/* body{
   padding: 0;
-  margin: 0;
-  /* background-image: url('https://www.mandatory.gg/wp-content/uploads/background/background-mandatory.jpg'); */
- 
+  margin: 0; 
   background-image: url("photo/galaxy_acceuil.jpg");
   background-repeat: no-repeat;
   background-color: black;
-}
+} */
 
-a{
+/* a{
   text-decoration: none;
   color: white;
-}
+} */
 
 header {
   background-color: rgb(34, 34, 34);
@@ -31,7 +29,7 @@ header {
 .fixed{
   background-color: rgba(34, 34, 34, 0.5);
 }
-
+/* 
 header div{
   max-width: 960px;
   margin: 0 auto;
@@ -61,7 +59,7 @@ header li a:hover {
   display: inline-block;
   margin-right: 1em;
 } */
-
+/* 
 nav{
   float: right;
   padding-top: 25px;
@@ -75,7 +73,6 @@ main {
  
 .titre{
   text-align: center;
-  /* text-decoration: underline; */
 }
 
 .content{
@@ -83,21 +80,21 @@ main {
   margin: 0 auto;
   padding: 2.5em 1em 1em 1em;
   text-align: justify;
-}
+} */
 
-footer {
-  /* background-color: rgb(34, 34, 34); */
-  /* background-image: url("photo/galaxy_acceuil.jpg"); */
+/* footer {
   width: 100%;
   color: #f1f1f1;
   bottom: 0;
-  /* position: sticky; */
+   position: sticky; 
   align-content: center;
   justify-content: flex-end;
   flex-wrap: wrap;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+} */
 
+
+/* 
 footer div{
   max-width: 960px;
   margin: 0 auto;
@@ -121,13 +118,6 @@ footer li a:hover {
   color: rgba(209, 6, 165, 0.781);
 }
 
-li{
-  padding-left: 40px;
-  margin-left: 15px;
-  display: inline-block;
-  margin-right: 1em;
-}
-
 @media only screen and (max-width: 880px) {
   .header { text-align: center; position: relative; }
   .content { padding: 1em; }
@@ -149,4 +139,4 @@ li{
   width: 200px;
   height: 200px;
   border-radius: 50%;
-}
+}  */
