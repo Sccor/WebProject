@@ -1,0 +1,49 @@
+footer {
+    width: 100%;
+    color: #f1f1f1;
+    bottom: 0;
+     position: sticky; 
+    align-content: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+  
+footer div{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1em 0 1em;
+}
+  
+footer .logo{
+    float: left;
+    font-size: 25px;
+    color: white;
+}
+  
+footer ul {
+    float: right;
+    list-style-type: none;
+    padding-top: 1em;
+    padding-right: 7em;
+}
+  
+footer li a:hover {
+    color: rgba(209, 6, 165, 0.781);
+}
+
+.reseaux{
+    width: 75px;
+    height: 75px;
+}
+  
+.fb{
+    width: 70px;
+    height: 60px;
+}
+  
+.nous{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}  
