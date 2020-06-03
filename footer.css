@@ -26,6 +26,7 @@ footer ul {
     list-style-type: none;
     padding-top: 1em;
     padding-right: 7em;
+    padding-bottom: 50px;
 }
   
 footer li a:hover {
@@ -35,11 +36,13 @@ footer li a:hover {
 .reseaux{
     width: 75px;
     height: 75px;
+    align-content: ;
 }
   
 .fb{
     width: 70px;
     height: 60px;
+    align-content: center;
 }
   
 .nous{
