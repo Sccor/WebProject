@@ -5,3 +5,10 @@ window.onscroll = function () {
         document.querySelector('header').className = "";
     }
  };
+
+
+//  document.querySelector('.raccourci').onclick=function(e){
+//     e.preventDefault();
+//     document.querySelector('.nav_right').classList.toggle(***);
+
+//  }

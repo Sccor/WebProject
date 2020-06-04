@@ -10,7 +10,7 @@ header {
 }
   
 .fixed{
-    background-color: rgba(34, 34, 34);
+    background-color: rgba(34, 34, 34, 0.7);
 }
   
 li{
@@ -31,7 +31,7 @@ header div{
     padding: 0 1em 0 1em;
 }
 
-nav{
+.nav_right{
     float: right;
     padding-top: 25px;
 }
@@ -52,9 +52,33 @@ header ul, footer ul {
 header li a:hover {
     color: rgba(209, 6, 165, 0.781);
 }
+
+.raccourci{
+    width: 40px;
+    height: 70px;
+    float: right;
+    margin: 40px;
+    display: none;
+    align-items: center;
+    cursor: pointer;
+}
+
+span.raccourci_span, span.raccourci_span:before, span.raccourci_span:after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: white;
+    position: relative;
+} 
+
+.raccourci_span:before{top: 12px;}
+.raccourci_span:after{top: -15px;}
   
-@media only screen and (max-width: 880px) {
-    .header { text-align: center; position: relative; }
+@media only screen and (max-width: 1138px) {
+    /* .header { text-align: center; position: relative; }
     .header .container .logo h1 { float: none; margin: 0; }
-    .header .nav ul { float: none; margin: auto;}
+    .header .nav ul { float: none; margin: auto;} */
+    .nav_right{display: none;}
+    .raccourci{display: flex;}
 }
