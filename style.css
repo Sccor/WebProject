@@ -64,6 +64,11 @@ main {
   color: white;
  }
  
+ .titre{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgb(216, 216, 216);
+ }
+
 .content{
   width: 980px;
   margin: 0 auto;
@@ -103,13 +108,6 @@ footer ul {
 
 footer li a:hover {
   color: rgba(150, 0, 0, 0.781);
-}
-
-li{
-  padding-left: 40px;
-  margin-left: 15px;
-  display: inline-block;
-  margin-right: 1em;
 }
 
 @media only screen and (max-width: 880px) {
