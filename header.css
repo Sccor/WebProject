@@ -36,11 +36,6 @@ header div{
     padding-top: 25px;
 }
   
-header .logo{
-    float: left;
-    font-size: 25px;
-    color: white;
-}
   
 header ul, footer ul {
     float: right;
@@ -53,11 +48,16 @@ header li a:hover {
     color: rgba(209, 6, 165, 0.781);
 }
 
+/* .is_open{
+    transform: translateX(0);
+} */
+
 .raccourci{
     width: 40px;
     height: 70px;
     float: right;
     margin: 40px;
+    margin-right: 63px;
     display: none;
     align-items: center;
     cursor: pointer;
@@ -79,6 +79,42 @@ span.raccourci_span, span.raccourci_span:before, span.raccourci_span:after{
     /* .header { text-align: center; position: relative; }
     .header .container .logo h1 { float: none; margin: 0; }
     .header .nav ul { float: none; margin: auto;} */
-    .nav_right{display: none;}
+
     .raccourci{display: flex;}
+
+    .nav_right{
+        /* display: none; */
+        position: absolute;
+        top: 150px;
+        right: 0;
+        width: 200px;
+        height: 100%;
+        /* background-color: green; */
+        padding: 0;
+        margin: 0;
+        /* transform: translateX(80%);
+        transition: all 0.3s ease-in-out; */
+    }
+
+    header ul{
+        /* background-color: blueviolet; */
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
+
+    header li{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    header li a{
+        display: block;
+        text-align: center;
+        height: 30px;
+        /* background-color: red; */
+        
+    }
+    
 }
