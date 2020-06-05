@@ -11,7 +11,7 @@ html {
 
   
 .logo{
-  float: left;
+  justify-content: flex-start;
 }
 
 header img{
@@ -34,6 +34,13 @@ header img{
 }
 .avis_bg{
   background-image: url("photo/avis.jpeg");
+}
+.us_bg{
+  background-image: url("photo/us2.jpg");
+  background-size: cover;
+}
+.contact_bg{
+  background-image: url("photo/contact.jpg");
 }
 body{
   background-attachment: fixed;
