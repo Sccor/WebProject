@@ -45,7 +45,6 @@ main {
   color: rgb(255, 255, 255);
   /*  */
   min-height: 100%;
-  
  }
  
 .titre{
@@ -85,6 +84,7 @@ main {
 /* Page les planetes : articles*/
 .planetes1{
   background-color: rgb(34, 0, 0);
+  background-image: url("photo/vaisseau.jpg");
   height: 420px;
   width: 100%;
   padding: 0;
