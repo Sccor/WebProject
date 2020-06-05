@@ -150,20 +150,21 @@ main {
   padding: 0;
   margin: 0;
   overflow: auto;
+  display: flex;
   justify-content: flex-end;
 }
 .venus .article{
   display: flex;
+  align-self: flex-end;
+  justify-self: flex-end;
   justify-content: flex-end;
+  height: 370px;
 }
 .venus h1{
   font-family: 'Lexend Mega', sans-serif;
-  margin: 5px;
-  margin-right: 10px;
-  margin-bottom: 20px;
+  margin: 0 10px 0 0;
   max-height: 40px;
-  display: flex;
-  justify-content: flex-end;
+  justify-self: flex-end;
 }
 .venus .texte{
   order: -2;
@@ -171,10 +172,20 @@ main {
 .venus .image_p{
   order: -1;
 }
+.venus .table{
+  order: -3;
+}
+.venus .table{
+  align-self: center;
+  font-family: 'Lexend Mega', sans-serif;
+  margin-left: 50px;
+  max-width: 500px;
+}
+
 /*TERRE*/
 .terre{
   background-color: rgb(14, 13, 13);
-  height: 55px;
+  height: 150px;
   width: 100%;
   padding: 0;
   margin: 0;
