@@ -20,3 +20,5 @@ possibilité de supprimer la branche (git branch -d brancheName)
 git remote add origin https://github.com/Sccor/WebProject.git
 git pull origin master (ramene en local)
 git push origin master (ramene sur le serveur distant)
+
+on scroll fixed planetes1 2 etc, articles

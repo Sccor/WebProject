@@ -91,22 +91,72 @@ main {
   margin: 0; 
 }
 /* Page les planetes : articles*/
-.planetes1{
-  background-color: rgb(34, 0, 0);
-  background-image: url("photo/vaisseau.jpg");
+.mercure{
+  background: linear-gradient(115deg, rgb(34, 34, 34) 75%, rgba(255, 255, 255, 0) 25%);
   height: 420px;
   width: 100%;
   padding: 0;
   margin: 0; 
+}
+.venus{
+  background: linear-gradient(-65deg, rgb(202, 64, 0) 85%, rgba(255, 255, 255, 0) 15%);
+  height: 420px;
+  width: 100%;
+  padding: 0;
+  margin: 0; 
+}
+.terre{
+  background-color: rgb(14, 13, 13);
+  height: 55px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  padding: 2.5em 1em 1em 1em;
+}
+.mars{
+  background: linear-gradient(90deg, rgb(167, 0, 0) 80%, rgba(255, 255, 255, 0) 5%, rgb(167, 0, 0) 15%);
+  height: 420px;
+  width: 100%;
+  padding: 0;
+  margin: 0; 
+}
+.jupiter{
+  background: linear-gradient(-70deg, rgb(167, 152, 104) 80%, rgba(255, 255, 255, 0) 20%);
+  height: 420px;
+  width: 100%;
+  padding: 0;
+  margin: 0; 
+}
+.saturne{
+  background: linear-gradient(55deg, rgb(141, 120, 51) 80%, rgba(255, 255, 255, 0) 20%);
+  height: 420px;
+  width: 100%;
+  padding: 0;
+  margin: 0; 
+}
+.uranus{
+  background: linear-gradient(-65deg, rgb(0, 143, 187) 90%, rgba(255, 255, 255, 0) 10%);
+  height: 420px;
+  width: 100%;
+  padding: 0;
+  margin: 0; 
+}
+.neptune{
+  background: linear-gradient(65deg, rgb(0, 51, 192) 90%, rgba(255, 255, 255, 0) 10%);
+  height: 420px;
+  width: 100%;
+  padding: 0;
+  margin: 0; 
+}
+.pluton{
+  background-color: rgb(14, 13, 13);
+  height: 55px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  padding: 2.5em 1em 1em 1em;
 }
 
-.planetes2{
-  background-color: rgb(0, 2, 34);
-  height: 420px;
-  width: 100%;
-  padding: 0;
-  margin: 0; 
-}
 
 
 
