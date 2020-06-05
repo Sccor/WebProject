@@ -9,11 +9,21 @@ html {
   height: 100%;
 }
 
+  
+.logo{
+  float: left;
+}
+
+header img{
+  padding: 10px;
+}
+
 .accueil_bg{
   background-image: url("photo/galaxy_acceuil.jpg");
 }
 .planetes_bg{
   background-image: url("photo/planetes2.jpeg");
+  background-size: cover;
 }
 .reserver_bg{
   background-image: url("photo/galaxy_acceuil.jpg");
@@ -72,7 +82,6 @@ main {
   height: 420px;
   width: 100%;
   padding: 0;
-  padding-right: 20px;
 }
 .reserver{
   background-color: rgb(22, 22, 22);

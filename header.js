@@ -7,8 +7,7 @@ window.onscroll = function () {
  };
 
 
-//  document.querySelector('.raccourci').onclick=function(e){
-//     e.preventDefault();
-//     document.querySelector('.nav_right').classList.toggle(***);
-
-//  }
+ document.querySelector('.raccourci').onclick=function(e){
+    e.preventDefault();
+    document.querySelector('.nav_right').classList.toggle('is_open');
+ }
