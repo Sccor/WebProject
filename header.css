@@ -4,6 +4,7 @@ header {
     color: #fcfcfc;
     top: 0;
     position:fixed;
+    display: flex;
     /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     font-family: 'Lexend Mega', sans-serif;
     transition: all ease-in-out 0.5s;
@@ -31,14 +32,21 @@ header div{
     padding: 0 1em 0 1em;
 }
 
+.div_logo{
+    margin-right: auto;
+    margin-left: 5px;
+}
+
 .nav_right{
-    float: right;
+    justify-content: flex-end;
     padding-top: 25px;
+    margin-left: auto;
+    margin-right: 15px;
 }
   
   
 header ul, footer ul {
-    float: right;
+    justify-content: flex-end;
     list-style-type: none;
     padding-top: 1em;
     padding-right: 7em;
@@ -51,12 +59,13 @@ header li a:hover {
 .raccourci{
     width: 40px;
     height: 70px;
-    float: right;
+    align-items: flex-end;  
     margin: 40px;
     margin-right: 63px;
     display: none;
     align-items: center;
     cursor: pointer;
+    line-height: 150px;
 }
 
 span.raccourci_span, span.raccourci_span:before, span.raccourci_span:after{
@@ -76,7 +85,6 @@ span.raccourci_span, span.raccourci_span:before, span.raccourci_span:after{
     .header .container .logo h1 { float: none; margin: 0; }
     .header .nav ul { float: none; margin: auto;} */
 
-    .raccourci{display: flex;}
 
     .nav_right{
         position: absolute;
@@ -87,6 +95,12 @@ span.raccourci_span, span.raccourci_span:before, span.raccourci_span:after{
         padding: 0;
         margin: 0;
         transform: translateX(100%);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .raccourci{
+        display: block;
+        align-items: flex-end;
         transition: all 0.3s ease-in-out;
     }
 
