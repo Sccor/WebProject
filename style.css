@@ -131,11 +131,17 @@ main {
   margin-bottom: 20px;
   max-height: 40px;
 }
-.mercure table{
+.mercure .table{
   align-self: center;
   font-family: 'Lexend Mega', sans-serif;
   margin-left: 50px;
+  max-width: 500px;
 }
+
+.tab{
+  padding-bottom: 3px;
+}
+
 /* VENUS */
 .venus{
   background: linear-gradient(-65deg, rgb(202, 64, 0) 85%, rgba(255, 255, 255, 0) 15%);
@@ -228,9 +234,6 @@ main {
   margin: 0;
   overflow: auto;
 }
-
-
-
 
 @media only screen and (max-width: 1138px) {
   .content { padding: 1em; }
