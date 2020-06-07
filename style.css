@@ -199,7 +199,23 @@ main {
   padding: 0;
   margin: 0;
   overflow: auto;
-} 
+}
+.mars .article{
+  display: flex;
+  justify-content: flex-start;
+}
+.mars h1{
+  font-family: 'Lexend Mega', sans-serif;
+  margin: 5px;
+  margin-bottom: 20px;
+  max-height: 40px;
+}
+.mars .table{
+  align-self: center;
+  font-family: 'Lexend Mega', sans-serif;
+  margin-left: 50px;
+  max-width: 500px;
+}
 /* JUPITER */
 .jupiter{
   background: linear-gradient(-70deg, rgb(167, 152, 104) 80%, rgba(255, 255, 255, 0) 20%);
