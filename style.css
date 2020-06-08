@@ -222,7 +222,14 @@ main {
   margin-left: 50px;
   max-width: 500px;
 }
-
+.info_venus{
+  background-color:rgb(202, 64, 0);
+  width: 50%;
+  margin: 0;
+  overflow: auto;
+  text-align: center;
+  display: none;
+}
 /*TERRE*/
 .terre{
   background-color: rgb(14, 13, 13);
