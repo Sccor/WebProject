@@ -16,13 +16,12 @@ footer {
     justify-content: space-between;
     width: 100%;
     margin: 0;
-    margin-right: 10px;
 }
 
 .main_footer .box{
-    flex-basis: 50%;
+    /* flex-basis: 50%; */
     padding: 10px 20px;
-    background-color: cyan;
+    background-color: rgb(59, 59, 59);
 }
 
 .box h2{
@@ -34,17 +33,26 @@ footer {
 }
 
 footer div{
-    max-width: 960px;
+    /* max-width: 960px; */
     margin: 0 auto;
     padding: 0 1em 0 1em;
 }
   
 footer ul {
-    float: right;
     list-style-type: none;
     padding-top: 1em;
     padding-right: 7em;
     padding-bottom: 50px;
+}
+
+.left, .right{
+    flex-grow: 1;
+    border: 1px solid green;
+}
+
+.middle{
+    flex-grow: 2;
+    border: 1px solid yellow;
 }
   
 footer li a:hover {
