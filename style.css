@@ -127,9 +127,10 @@ main {
 }
 .mercure h1{
   font-family: 'Lexend Mega', sans-serif;
-  margin: 5px;
+  margin: 25px 0 0 40px;
   margin-bottom: 20px;
   max-height: 40px;
+  justify-self: center;
 }
 .mercure .table{
   align-self: center;
@@ -156,24 +157,19 @@ main {
 .venus .article{
   display: flex;
   align-self: flex-end;
-  justify-self: flex-end;
   justify-content: flex-end;
-  height: 370px;
+  height: 320px;
 }
 .venus h1{
   font-family: 'Lexend Mega', sans-serif;
-  margin: 0 10px 0 0;
+  margin: 25px 40px 0 0;
   max-height: 40px;
-  justify-self: flex-end;
 }
 .venus .texte{
-  order: -2;
-}
-.venus .image_p{
   order: -1;
 }
 .venus .table{
-  order: -3;
+  order: -2;
 }
 .venus .table{
   align-self: center;
@@ -185,11 +181,45 @@ main {
 /*TERRE*/
 .terre{
   background-color: rgb(14, 13, 13);
-  height: 150px;
+  height: 100px;
   width: 100%;
   padding: 0;
   margin: 0;
   overflow: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.terre h1{
+  font-family: 'Lexend Mega', sans-serif;
+  margin: 0 10px 0 0;
+  max-height: 40px;
+  align-self: center;
+}
+
+/* LUNE */
+.lune{
+  background: linear-gradient(115deg, rgb(165, 165, 165) 80%, rgba(255, 255, 255, 0) 20%);
+  height: 350px;
+  width: 100%;
+  margin: 0;
+  overflow: auto;
+}
+.lune .article{
+  display: flex;
+  justify-content: flex-start;
+}
+.lune h1{
+  font-family: 'Lexend Mega', sans-serif;
+  margin: 25px 0 0 40px;
+  margin-bottom: 20px;
+  max-height: 40px;
+}
+.lune .table{
+  align-self: center;
+  font-family: 'Lexend Mega', sans-serif;
+  margin-left: 50px;
+  max-width: 500px;
 }
 /*MARS*/
 .mars{
@@ -206,7 +236,7 @@ main {
 }
 .mars h1{
   font-family: 'Lexend Mega', sans-serif;
-  margin: 5px;
+  margin: 25px 0 0 40px;
   margin-bottom: 20px;
   max-height: 40px;
 }
@@ -218,12 +248,39 @@ main {
 }
 /* JUPITER */
 .jupiter{
-  background: linear-gradient(-70deg, rgb(167, 152, 104) 80%, rgba(255, 255, 255, 0) 20%);
+  background: linear-gradient(-70deg, rgb(167, 152, 104) 85%, rgba(255, 255, 255, 0) 15%);
   height: 420px;
   width: 100%;
   padding: 0;
   margin: 0;
   overflow: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+.jupiter .article{
+  display: flex;
+  align-self: flex-end;
+  justify-self: flex-end;
+  justify-content: flex-end;
+  height: 370px;
+}
+.jupiter h1{
+  font-family: 'Lexend Mega', sans-serif;
+  margin: 25px 40px 0 0;
+  max-height: 40px;
+  justify-self: flex-end;
+}
+.jupiter .texte{
+  order: -1;
+}
+.jupiter .table{
+  order: -2;
+}
+.jupiter .table{
+  align-self: center;
+  font-family: 'Lexend Mega', sans-serif;
+  margin-left: 50px;
+  max-width: 500px;
 }
 /* SATURNE */
 .saturne{
@@ -264,4 +321,16 @@ main {
 
 @media only screen and (max-width: 1138px) {
   .content { padding: 1em; }
+  
+}
+@media only screen and (max-width: 1460px) {
+  .mercure{background-color: rgb(34, 34, 34);}
+  .venus{background-color: rgb(202, 64, 0);}
+  .lune{background-color: rgb(165, 165, 165);}
+  .mars{background-color: rgb(167, 0, 0);}
+  .jupiter{background-color: rgb(167, 152, 104);}
+  .saturne{background-color: rgb(141, 120, 51);}
+  .uranus{background-color: rgb(0, 143, 187);}
+  .neptune{background-color: rgb(0, 51, 192);}
+  .pluton{background-color: rgb(14, 13, 13);}
 }
