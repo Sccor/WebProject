@@ -10,4 +10,15 @@ window.onscroll = function () {
  document.querySelector('.raccourci').onclick=function(e){
     e.preventDefault();
     document.querySelector('.nav_right').classList.toggle('is_open');
- }
+}
+
+function show_info(id){
+    var inf = "#info"
+    var inf = inf.concat(id)
+    console.log(inf);
+    if(document.querySelector(inf).style.display == 'inline-block'){
+        document.querySelector(inf).style.display='none';
+    }else{
+        document.querySelector(inf).style.display='inline-block';
+    }
+}
