@@ -151,8 +151,6 @@ main {
   padding: 0;
   margin: 0;
   overflow: auto;
-  display: flex;
-  justify-content: flex-end;
 }
 .venus .article{
   display: flex;
@@ -164,6 +162,7 @@ main {
   font-family: 'Lexend Mega', sans-serif;
   margin: 25px 40px 0 0;
   max-height: 40px;
+  text-align: right;
 }
 .venus .texte{
   order: -1;
@@ -254,21 +253,19 @@ main {
   padding: 0;
   margin: 0;
   overflow: auto;
-  display: flex;
-  justify-content: flex-end;
 }
 .jupiter .article{
   display: flex;
   align-self: flex-end;
   justify-self: flex-end;
   justify-content: flex-end;
-  height: 370px;
+  height: 320px;
 }
 .jupiter h1{
   font-family: 'Lexend Mega', sans-serif;
   margin: 25px 40px 0 0;
   max-height: 40px;
-  justify-self: flex-end;
+  text-align: right;
 }
 .jupiter .texte{
   order: -1;
@@ -291,6 +288,22 @@ main {
   margin: 0;
   overflow: auto;
 }
+.saturne .article{
+  display: flex;
+  justify-content: flex-start;
+}
+.saturne h1{
+  font-family: 'Lexend Mega', sans-serif;
+  margin: 25px 0 0 40px;
+  margin-bottom: 20px;
+  max-height: 40px;
+}
+.saturne .table{
+  align-self: center;
+  font-family: 'Lexend Mega', sans-serif;
+  margin-left: 50px;
+  max-width: 500px;
+}
 /* URANUS */
 .uranus{
   background: linear-gradient(-65deg, rgb(0, 143, 187) 90%, rgba(255, 255, 255, 0) 10%);
@@ -300,6 +313,32 @@ main {
   margin: 0;
   overflow: auto;
 }
+.uranus .article{
+  display: flex;
+  align-self: flex-end;
+  justify-self: flex-end;
+  justify-content: flex-end;
+  height: 320px;
+}
+.uranus h1{
+  font-family: 'Lexend Mega', sans-serif;
+  margin: 25px 40px 0 0;
+  max-height: 40px;
+  text-align: right;
+}
+.uranus .texte{
+  order: -1;
+}
+.uranus .table{
+  order: -2;
+}
+.uranus .table{
+  align-self: center;
+  font-family: 'Lexend Mega', sans-serif;
+  margin-left: 50px;
+  max-width: 500px;
+}
+
 /* NEPTUNE */
 .neptune{
   background: linear-gradient(65deg, rgb(0, 51, 192) 90%, rgba(255, 255, 255, 0) 10%);
@@ -308,6 +347,22 @@ main {
   padding: 0;
   margin: 0;
   overflow: auto;
+}
+.neptune .article{
+  display: flex;
+  justify-content: flex-start;
+}
+.neptune h1{
+  font-family: 'Lexend Mega', sans-serif;
+  margin: 25px 0 0 40px;
+  margin-bottom: 20px;
+  max-height: 40px;
+}
+.neptune .table{
+  align-self: center;
+  font-family: 'Lexend Mega', sans-serif;
+  margin-left: 50px;
+  max-width: 500px;
 }
 /* PLUTON */
 .pluton{
