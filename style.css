@@ -126,7 +126,7 @@ main {
 }
 .div_bouton_r{
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   width: 70%;
   margin: 20px 0 15px 0;
   flex-direction: row-reverse;
