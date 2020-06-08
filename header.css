@@ -42,8 +42,7 @@ header div{
     margin-left: auto;
     margin-right: 15px;
 }
-  
-  
+
 header ul, footer ul {
     justify-content: flex-end;
     list-style-type: none;
@@ -60,6 +59,7 @@ header li a:hover {
     height: 70px;
     align-items: flex-end;  
     margin: 40px;
+    top: -15px;
     margin-right: 63px;
     display: none;
     align-items: center;
@@ -95,6 +95,7 @@ span.raccourci_span, span.raccourci_span:before, span.raccourci_span:after{
         margin: 0;
         transform: translateX(100%);
         transition: all 0.3s ease-in-out;
+        /* background-color: rgba(34, 34, 34, 0.7); */
     }
 
     .raccourci{

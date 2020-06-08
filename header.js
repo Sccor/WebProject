@@ -1,6 +1,8 @@
 window.onscroll = function () {
     if (document.documentElement.scrollTop > 50) { 
         document.querySelector('header').className = "fixed"; 
+    // } else if(document.documentElement.scrollTop > 50 && document.querySelector('.nav_right').className.contains('is_open')){
+    //     document.querySelector('.nav_right').className = "fixed"; 
     } else {
         document.querySelector('header').className = "";
     }
