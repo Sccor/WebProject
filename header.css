@@ -60,12 +60,12 @@ header li a:hover {
 .raccourci{
     width: 40px;
     height: 70px;
-    align-items: flex-end;  
+    justify-self: flex-end;
     margin: 40px;
     top: -15px;
     margin-right: 63px;
     display: none;
-    align-items: center;
+    /* align-items: center; */
     cursor: pointer;
     line-height: 150px;
 }
