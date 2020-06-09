@@ -189,8 +189,42 @@ main {
 
 /* transport */
 
+.content_transpo{
+  width: 65%;
+  margin: 0 auto;
+  padding: 2.5em 1em 1em 1em;
+  overflow: auto;
+  /* background-color: rgba(34, 34, 34, 0.7); */
+  padding-top: 1em;
+  padding-bottom: 16px;
+  text-align: center;
+  font-family: 'Lexend Mega', sans-serif;
+  font-size: 1.7vw;
+}
 
+.content.margin_around{
+  margin: 15px 50px ;
+  font-size: 1.2vw;
+  align-items: center;
+}
 
+.transpo{
+  display: flex;
+  flex-direction: column;
+}
+
+.titre1{
+  padding-bottom: 15px;
+}
+
+.transpo1{
+  display: flex;
+}
+
+.transpo1 .content{
+  background-color: rgba(34, 34, 34, 0.95);
+  width: 100%;
+}
 
 @media only screen and (max-width: 1138px) {
   .content { padding: 1em; }
