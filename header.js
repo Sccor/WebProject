@@ -1,3 +1,4 @@
+var rellax = new Rellax('.rellax', {center: true});
 window.onscroll = function () {
     if (document.documentElement.scrollTop > 50) { 
         document.querySelector('header').className = "fixed"; 
