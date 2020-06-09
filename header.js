@@ -23,3 +23,7 @@ function show_info(id){
         document.querySelector(inf).style.display='inline-block';
     }
 }
+
+function contact_form(){
+    alert("Votre réponse a bien été envoyée !");
+}
