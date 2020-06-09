@@ -9,7 +9,9 @@ header {
     font-family: 'Lexend Mega', sans-serif;
     transition: all ease-in-out 0.5s;
 }
-  
+header img{
+    padding: 10px;
+}
 .fixed{
     background-color: rgba(34, 34, 34, 0.7);
 }
