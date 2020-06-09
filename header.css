@@ -61,9 +61,7 @@ header li a:hover {
     justify-self: flex-end;
     margin: 40px;
     top: -15px;
-    margin-right: 63px;
     display: none;
-    /* align-items: center; */
     cursor: pointer;
     line-height: 150px;
 }
