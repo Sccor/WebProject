@@ -1,5 +1,9 @@
 var rellax = new Rellax('.rellax', {center: true});
 window.onscroll = function () {
+    this.console.log(document.documentElement.scrollTop)
+    if (document.documentElement.scrollTop > 100 && document.documentElement.scrollTop < 400) {
+        document.querySelector('but1').style.backgroundPosition="dqs";
+    }
     if (document.documentElement.scrollTop > 50) { 
         document.querySelector('header').className = "fixed"; 
     // } else if(document.documentElement.scrollTop > 50 && document.querySelector('.nav_right').className.contains('is_open')){

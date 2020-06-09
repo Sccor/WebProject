@@ -61,7 +61,7 @@ main {
   width: 100%;
   margin: 0;
   /* text-align: center; */
-  font-size: 40px;
+  font-size: 4.2vw;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -156,12 +156,19 @@ main {
 .bout_accueil{
   background-color: rgba(32, 32, 32, 0.493);
   display: inline;
-  padding: 5px 10px;
   border: none;
-  border-radius: 25px;
+  border-radius: 10rem;
   font-family: 'Lexend Mega', sans-serif;
   color: rgb(216, 216, 216);
   font-size: 25px;
+  padding: 20px;
+  background-image: linear-gradient(to right, rgba(83, 92, 104, 0.6) 50%, rgba(25, 114, 230, 0.788) 50%);
+  background-size: 200%;
+  border-radius: 10rem;
+  transition: background-position 2s ease-in-out;
+}
+.bout_accueil:hover{
+  background-position: -100%;
 }
 .titre h1{
   height: 200px;
@@ -182,5 +189,10 @@ main {
 
 @media only screen and (max-width: 1138px) {
   .content { padding: 1em; }
-  
+}
+@media only screen and (min-width: 800px) {
+  .titre { font-size: 45px; }
+}
+@media only screen and (max-width: 800px) {
+  .bout_accueil{font-size: 2.5vw;}
 }
