@@ -384,3 +384,14 @@
   max-height: 40px;
   align-self: center;
 }
+@media only screen and (max-width: 1460px) {
+  .mercure{background-color: rgb(34, 34, 34);}
+  .venus{background-color: rgb(202, 64, 0);}
+  .lune{background-color: rgb(165, 165, 165);}
+  .mars{background-color: rgb(167, 0, 0);}
+  .jupiter{background-color: rgb(167, 152, 104);}
+  .saturne{background-color: rgb(141, 120, 51);}
+  .uranus{background-color: rgb(0, 143, 187);}
+  .neptune{background-color: rgb(0, 51, 192);}
+  .pluton{background-color: rgb(14, 13, 13);}
+}
