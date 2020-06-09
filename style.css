@@ -86,7 +86,7 @@ main {
   background-repeat: no-repeat;
   /* justify-content: center; */
   background-attachment: fixed;
-  height: 750px;
+  height: 500px;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -97,7 +97,7 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 750px;
+  height: 650px;
   width: 100%;
   padding: 0;
   margin: 0; 
@@ -108,15 +108,13 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 700px;
+  height: 730px;
   width: 100%;
   padding: 0;
   margin: 0; 
 }
 .bg_transport{
-  background-color: rgb(104, 0, 69);
-  width: 100%;
-  height: 951px;
+  background-color: rgba(48, 48, 48, 0.178);
   padding: 0;
   margin: 0; 
 }
