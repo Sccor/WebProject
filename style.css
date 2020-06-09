@@ -162,10 +162,10 @@ main {
   color: rgb(216, 216, 216);
   font-size: 25px;
   padding: 20px;
-  background-image: linear-gradient(to right, rgba(83, 92, 104, 0.6) 50%, rgba(25, 114, 230, 0.788) 50%);
+  background-image: linear-gradient(to right, rgba(83, 92, 104, 0.6) 50%, rgba(25, 114, 230, 0.8) 50%);
   background-size: 200%;
   border-radius: 10rem;
-  transition: background-position 2s ease-in-out;
+  transition: background-position 1s ease-in-out;
 }
 .bout_accueil:hover{
   background-position: -100%;
