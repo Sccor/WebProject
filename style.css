@@ -18,7 +18,8 @@ html {
   background-size: cover;
 }
 .reserver_bg{
-  background-image: url("photo/galaxy_acceuil.jpg");
+  background-image: url("photo/reserver.jpeg");
+  background-size: cover;
 }
 .transport_bg{
   background-image: url("photo/vaisseau.jpg");
@@ -51,7 +52,7 @@ a{
 main {
   margin-top: 100px;
   color: rgb(255, 255, 255);
-  min-height: 100%;
+  /* min-height: 100%; */
  }
  
 .titre{
@@ -61,7 +62,7 @@ main {
   width: 100%;
   margin: 0;
   /* text-align: center; */
-  font-size: 4vw;
+  font-size: 45px;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -174,6 +175,79 @@ main {
   height: 200px;
   text-align: center;
 }
+/* Reserver */
+.content_form{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.formu{
+  width: 100%;
+  display: flex;
+  justify-self: center;
+  margin: 0 0 50px 0;
+  padding: 30px;
+  box-sizing: border-box;
+  max-width: 1000px;
+  background-color: rgba(25, 114, 230, 0.8);
+  font-family:'Lexend Mega', sans-serif;
+  border-radius: 12%;
+}
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.flex-container .ligne1, .flex-container .ligne2{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.duo{
+  display: flex;
+  font-size: 12px;
+  flex-direction: column;
+  justify-content: center;
+}
+.duo h3{
+  text-align: center;
+}
+.form_button {
+  background-color: rgba(32, 32, 32, 0.493);
+  display: inline;
+  border: none;
+  border-radius: 10rem;
+  font-family: 'Lexend Mega', sans-serif;
+  color: rgb(216, 216, 216);
+  box-shadow: 2px 2px rgb(56, 63, 71);
+  font-size: 25px;
+  padding: 20px;
+  background-image: linear-gradient(to right, rgba(83, 92, 104, 0.6) 50%, rgba(119, 0, 255, 0.8) 50%);
+  background-size: 200%;
+  border-radius: 10rem;
+  transition: background-position 1s ease-in-out;
+}
+.form_button:hover{
+  background-position: -100%;
+  cursor: pointer;
+}
+.formu input, select{
+  border: 2px black solid;
+  border-radius: 7px;
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.719);
+  color: #fff;
+}
+.valider{
+  justify-self: flex-start;
+  align-self: flex-end;
+}
 /* Qui sommes nous */
 .us_content{
   background-color: rgba(34, 34, 34, 0.726);
@@ -228,10 +302,11 @@ main {
 
 @media only screen and (max-width: 1138px) {
   .content { padding: 1em; }
+  .titre{font-size: 35px;} 
 }
-@media only screen and (min-width: 800px) {
-  .titre { font-size: 45px; }
-}
+
 @media only screen and (max-width: 800px) {
   .bout_accueil{font-size: 2.5vw;}
+  .titre{font-size: 3vw;}
+  .ligne1, .ligne2{flex-wrap: wrap;}
 }
