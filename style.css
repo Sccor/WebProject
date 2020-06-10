@@ -304,6 +304,9 @@ input:invalid, select:invalid {
   background-color: rgba(255, 255, 255, 0.425);
   align-items: center;
 }
+.resultat .duo{
+  margin: 0 0 0 25px;
+}
 .duo_table{
   display: flex;
   font-size: 15px;
@@ -315,11 +318,11 @@ input:invalid, select:invalid {
   border: 3px solid black;
   border-collapse: collapse;
   text-align: center;
-  margin: 0 20px 0 40px;
+  margin: 20px 20px 0 40px;
 }
 .modal{
   font-size: 17px;
-  margin: 10px 0 20px 0;
+  margin: 0px 0 20px 0;
 }
 /* Qui sommes nous */
 .us_content{
