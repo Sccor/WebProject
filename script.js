@@ -57,13 +57,14 @@ function show_info(id){
     }
 }
 
-function contact_form(){
-    if(prenom.checkValidity() && nom.checkValidity() && email.checkValidity() && plan.checkValidity() && time.checkValidity()){
-        alert("Votre réponse a bien été envoyée !");
-    }
-}
+// function contact_form(){
+//     if(prenom.checkValidity() && nom.checkValidity() && email.checkValidity() && plan.checkValidity() && time.checkValidity()){
+//         alert("Votre réponse a bien été envoyée !");
+//     }
+// }
 
-document.getElementById('submit').onclick = contact_form;
+// console.log(document.getElementById('#submi'))
+// document.getElementById('#submi').onclick = contact_form;
 
 function resultat(){
     console.log("HEREEE");

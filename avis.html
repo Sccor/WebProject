@@ -71,41 +71,56 @@
         <p class="date" name="date_avis">12/12/2035</p>
         <p class="signe" name="nom_avis">Romain</p>
       </div>
-
-
-
-
     </div>
 
-    <form id="fo" action="" method="post" class="form">
-     <div class="flex-container">
-       <div>
-         <input type="text" placeholder="Firstname*" id="firstname" name="user_firstname" required>
-       </div>
-       <div>
-         <input type="text" placeholder="Surname*" id="surname" name="user_surname" required>
-       </div>
-       <div>
-         <input type="email" placeholder="E-Mail*" id="email" name="user_mail" required>
-       </div>
-       <div>
-         <select name="role" id="role" class="item">
-           <option value="Role">Planète</option>
-           <option value="Student">Mercure</option>
-           <option value="Teacher">Vénus</option>
-           <option value="Teacher">Lune</option>
-           <option value="Teacher">Mars</option>
-           <option value="Teacher">Jupiter</option>
-           <option value="Teacher">Saturne</option>
-           <option value="Teacher">Uranus</option>
-           <option value="Teacher">Neptune</option>
-         </select>
-       </div>
-     </div> 
-     <div>
-       <button type="button" id="add" class="button">Envoyer</button>
-     </div>
-   </form>
+    <div class="content_form">
+      <form id="fo" action="" method="post" class="formu">
+        <div class="flex-container">
+          <div class="ligne1">
+            <div class="duo">
+            <input type="text" placeholder="Prénom*" id="prenom" name="user_firstname" required>
+            <h3>Prénom*</h3>
+            </div>
+            <div class="duo">
+              <select name="planete" id="planete" required>
+                <option value="">Planètes</option>
+                <option value="Mercure">Mercure</option>
+                <option value="Venus">Venus</option>
+                <option value="Lune">Lune</option>
+                <option value="Mars">Mars</option>
+                <option value="Jupiter">Jupiter</option>
+                <option value="Saturne">Saturne</option>
+                <option value="Uranus">Uranus</option>
+                <option value="Neptune">Neptune</option>
+              </select>
+              <h3>Destination*</h3>
+            </div>
+          </div>
+          <div class="ligne2">
+            <div class="duo">
+              <input type="number" placeholder="Durée du séjour (en jours)*" id="time" min="3" required>
+              <h3>Durée du séjour (minimum 3 jours)*</h3>
+            </div>
+            <div class="duo">
+              <input type="number" placeholder="Nombre de moins de 12ans*" id="nombre_enfants" min="0">
+              <h3>Nombre de moins de 12ans*</h3>
+            </div>
+            <div class="duo">
+              <input type="number" placeholder="Nombre de 12-20*" id="nombre_ados" min="0">
+              <h3>Nombre de 12-20*</h3>
+            </div>
+            <div class="duo">
+              <input type="number" placeholder="Nombre de plus de 20ans*" id="nombre_adultes" min="0">
+              <h3>Nombre de plus de 20ans*</h3>
+            </div>
+          </div>
+          <div class="valider">
+              <button type="button" id="add" class="form_button">Valider</button> 
+          </div>
+        </div> 
+        
+      </form>
+  </div>
 
   </main>
 

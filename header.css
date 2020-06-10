@@ -52,7 +52,8 @@ header ul, footer ul {
 }
   
 header li a:hover {
-    color: rgba(209, 6, 165, 0.781);
+    color:white;
+    border-bottom: 1.5px solid white;
 }
 
 .raccourci{
