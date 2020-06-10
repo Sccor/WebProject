@@ -287,26 +287,34 @@ main {
   background-color: rgba(0, 0, 0, 0.719);
   color: #fff;
 }
+input:invalid, select:invalid {
+  border: 2px solid red;
+  caret-color: red;
+}
 .valider{
   justify-self: flex-start;
   align-self: flex-end;
 }
-#resultat{
+#content_resultat{
   font-family: 'Lexend Mega', sans serif;
   color: #000000;
-  background-color: rgba(255, 255, 255, 0.425);
   width: 80%;
   height: 500px;
   margin: 0 0 50px 0;
+  display: flex;
+  justify-content: center;
+}
+#resultat{
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.425);
+  flex-direction: column;
 }
 
 /* Qui sommes nous */
 .us_content{
   background-color: rgba(34, 34, 34, 0.726);
 }
-.nous{
 
-}
 .nous_img{
   width: 200px;
   height: 200px;
