@@ -63,22 +63,30 @@ function contact_form(){
 
 function resultat(){
     console.log("HEREEE");
-    // if(document.getElementById("prenom") == null){
-    //     let prenom = ""; 
-    // }
+    var prix_enfants = 10;
+    var prix_ados = 12;
+    var prix_adultes = 15;
+
     var classAttr = "class";
-    let prenom = document.getElementById("prenom").value;
-    let nom = document.getElementById("nom").value;
-    let email = document.getElementById("email").value;
-    let plan = document.getElementById("planete").value;
-    let time = document.getElementById("time").value;
+    let prenom = document.getElementById("prenom");
+    let nom = document.getElementById("nom");
+    let email = document.getElementById("email");
+    let plan = document.getElementById("planete");
+    let time = document.getElementById("time");
     let nombre_enfants = document.getElementById("nombre_enfants").value;
     let nombre_ados = document.getElementById("nombre_ados").value;
     let nombre_adultes = document.getElementById("nombre_adultes").value;
     console.log(plan);
-
-    var result = '<h1>'+plan+'</h1><div '+classAttr+'="image_p"><img src="photo/'+plan+'.png" alt="'+plan+' png" width="200" height="200"></div>';
-    console.log(result);
-    document.getElementById("resultat").innerHTML = result;
+    if(prenom.checkValidity() && nom.checkValidity() && email.checkValidity() && plan.checkValidity() && time.checkValidity()){
+        prenom = prenom.value;
+        nom = nom.value;
+        email = email.value;
+        plan = plan.value;
+        time = time.value;
+        var result = '<h1>'+plan+'</h1><div '+classAttr+'="image_p"><img src="photo/'+plan+'.png" alt="'+plan+' png" width="200" height="200"></div>';
+        result = result + '<table class="table_result"><tr><td>Type</td><td>Nombre</td><td>Prix</td><tr><td>Moins de 12ans</td><td>'+nombre_enfants+'</td><td>'+prix_enfant*nombre_enfants+'</td></tr><td>12-20ans</td><td>Plus de 20ans</td><td>Durée</td><td>Total</td></table>'
+        console.log(result);
+        document.getElementById("resultat").innerHTML = result;
+    }
 }
 document.getElementById('add').onclick = resultat;
