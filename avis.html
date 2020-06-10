@@ -74,14 +74,15 @@
     </div>
 
     <div class="content_form">
-      <form id="fo" action="" method="post" class="formu">
+      <form id="fo" action="" method="post" class="av">
         <div class="flex-container">
           <div class="ligne1">
             <div class="duo">
-            <input type="text" placeholder="Prénom*" id="prenom" name="user_firstname" required>
-            <h3>Prénom*</h3>
+              <h3>Prénom *</h3>
+              <input type="text" placeholder="Prénom*" id="prenom" name="user_firstname" required>
             </div>
             <div class="duo">
+              <h3>Planète *</h3>
               <select name="planete" id="planete" required>
                 <option value="">Planètes</option>
                 <option value="Mercure">Mercure</option>
@@ -93,25 +94,16 @@
                 <option value="Uranus">Uranus</option>
                 <option value="Neptune">Neptune</option>
               </select>
-              <h3>Destination*</h3>
             </div>
           </div>
-          <div class="ligne2">
+          <div class="ligne2_avis">
             <div class="duo">
-              <input type="number" placeholder="Durée du séjour (en jours)*" id="time" min="3" required>
-              <h3>Durée du séjour (minimum 3 jours)*</h3>
+              <h3>Votre titre</h3>
+              <input type="text" placeholder="titre" id="titre_avis" name="user_titre_avis">
             </div>
             <div class="duo">
-              <input type="number" placeholder="Nombre de moins de 12ans*" id="nombre_enfants" min="0">
-              <h3>Nombre de moins de 12ans*</h3>
-            </div>
-            <div class="duo">
-              <input type="number" placeholder="Nombre de 12-20*" id="nombre_ados" min="0">
-              <h3>Nombre de 12-20*</h3>
-            </div>
-            <div class="duo">
-              <input type="number" placeholder="Nombre de plus de 20ans*" id="nombre_adultes" min="0">
-              <h3>Nombre de plus de 20ans*</h3>
+              <h3>Votre message *</h3>
+             <textarea name="message" placeholder="rentrer un court avis sur votre séjour" id="msg_avis" cols="60" rows="10"></textarea>
             </div>
           </div>
           <div class="valider">
