@@ -421,7 +421,31 @@ input:invalid, select:invalid {
   display: flex;
   flex-wrap: wrap;
 }
-
+.content_form_avis{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ligne_moteur{
+  display: flex;
+  justify-content: center;
+  margin: 0 0 40px 0;
+}
+.ligne_moteur .moteur{
+  margin: 0 15vh 0 15vh;
+}
+.moteur{
+  display: flex;
+  flex-direction: column;
+  
+}
+.moteur img{
+  height: 25px;
+  width: 100px;
+  z-index: 10;
+  margin: 0 0 -10px 0;
+}
 .avis{
   display: flex;
   flex-direction: column;
@@ -446,7 +470,8 @@ input:invalid, select:invalid {
   width: 100%;
   display: flex;
   justify-self: center;
-  margin: 0 0 50px 0;
+  flex-wrap: wrap;
+  margin: 0;
   padding: 30px;
   box-sizing: border-box;
   max-width: 1000px;
@@ -475,12 +500,14 @@ input:invalid, select:invalid {
   color: white;
   background-color: rgba(0, 0, 0, 0.719);
   margin: 15px;
+  width: 25vw;
 }
 
 .ligne2_avis{
   display: flex;
   justify-content: space-around;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 1138px) {
