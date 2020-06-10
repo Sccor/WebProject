@@ -11,7 +11,7 @@ html {
 }
 
 .accueil_bg{
-  background-image: url("photo/galaxy_acceuil.jpg");
+  background-image: url("photo/accueil01_rs.jpg");
 }
 .planetes_bg{
   background-image: url("photo/planetes2.jpeg");
@@ -58,7 +58,7 @@ main {
  
 .titre{
   font-family: 'Lexend Mega', sans-serif;
-  color: rgb(216, 216, 216);
+  color: white;
   height: 420px;
   width: 100%;
   margin: 0;
