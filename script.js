@@ -63,28 +63,68 @@ function contact_form(){
 
 function resultat(){
     console.log("HEREEE");
+    var prix_plan = 0;
     var prix_enfants = 10;
     var prix_ados = 12;
     var prix_adultes = 15;
-
+    var prix_mercure = 840;
+    var prix_venus = 810;
+    var prix_lune = 540;
+    var prix_mars = 750;
+    var prix_jupiter = 820;
+    var prix_saturne = 970;
+    var prix_uranus = 905;
+    var prix_neptune = 865;
     var classAttr = "class";
-    let prenom = document.getElementById("prenom");
-    let nom = document.getElementById("nom");
-    let email = document.getElementById("email");
-    let plan = document.getElementById("planete");
-    let time = document.getElementById("time");
-    let nombre_enfants = document.getElementById("nombre_enfants").value;
-    let nombre_ados = document.getElementById("nombre_ados").value;
-    let nombre_adultes = document.getElementById("nombre_adultes").value;
-    console.log(plan);
+    var prenom = document.getElementById("prenom");
+    var nom = document.getElementById("nom");
+    var email = document.getElementById("email");
+    var plan = document.getElementById("planete");
+    var time = document.getElementById("time");
+    var nombre_enfants = document.getElementById("nombre_enfants").value;
+    var nombre_ados = document.getElementById("nombre_ados").value;
+    var nombre_adultes = document.getElementById("nombre_adultes").value;
     if(prenom.checkValidity() && nom.checkValidity() && email.checkValidity() && plan.checkValidity() && time.checkValidity()){
         prenom = prenom.value;
         nom = nom.value;
         email = email.value;
         plan = plan.value;
         time = time.value;
-        var result = '<h1>'+plan+'</h1><div '+classAttr+'="image_p"><img src="photo/'+plan+'.png" alt="'+plan+' png" width="200" height="200"></div>';
-        result = result + '<table class="table_result"><tr><td>Type</td><td>Nombre</td><td>Prix</td><tr><td>Moins de 12ans</td><td>'+nombre_enfants+'</td><td>'+prix_enfant*nombre_enfants+'</td></tr><td>12-20ans</td><td>Plus de 20ans</td><td>Durée</td><td>Total</td></table>'
+        if(nombre_enfants === ""){
+            nombre_enfants = 0;
+        }
+        if(nombre_ados === ""){
+            nombre_ados = 0;
+        }
+        if(nombre_adultes === ""){
+            nombre_adultes = 0;
+        } 
+        var prix_time = (time-2)*prix_enfants*nombre_enfants + (time-2)*prix_ados*nombre_ados + (time-2)*prix_adultes*nombre_adultes;
+        if(plan == "Mercure"){
+            prix_plan = prix_mercure;
+            var prix_total = prix_mercure + (time-2)*prix_enfants*nombre_enfants + (time-2)*prix_ados*nombre_ados + (time-2)*prix_adultes*nombre_adultes;
+        }else if(plan == "Venus"){
+            prix_plan = prix_venus;
+            var prix_total = prix_venus + (time-2)*prix_enfants*nombre_enfants + (time-2)*prix_ados*nombre_ados + (time-2)*prix_adultes*nombre_adultes;
+        }else if(plan == "Lune"){
+            prix_plan = prix_lune;
+            var prix_total = prix_lune + (time-2)*prix_enfants*nombre_enfants + (time-2)*prix_ados*nombre_ados + (time-2)*prix_adultes*nombre_adultes;
+        }else if(plan == "Jupiter"){
+            prix_plan = prix_jupiter;
+            var prix_total = prix_jupiter + (time-2)*prix_enfants*nombre_enfants + (time-2)*prix_ados*nombre_ados + (time-2)*prix_adultes*nombre_adultes;
+        }else if(plan == "Saturne"){
+            prix_plan = prix_saturne;
+            var prix_total = prix_saturne + (time-2)*prix_enfants*nombre_enfants + (time-2)*prix_ados*nombre_ados + (time-2)*prix_adultes*nombre_adultes;
+        }else if(plan == "Uranus"){
+            prix_plan = prix_uranus;
+            var prix_total = prix_uranus + (time-2)*prix_enfants*nombre_enfants + (time-2)*prix_ados*nombre_ados + (time-2)*prix_adultes*nombre_adultes;
+        }else if(plan == "Neptune"){
+            prix_plan = prix_neptune;
+            var prix_total = prix_neptune + (time-2)*prix_enfants*nombre_enfants + (time-2)*prix_ados*nombre_ados + (time-2)*prix_adultes*nombre_adultes;
+        }
+        
+        var result = '<div class="duo"><h2>'+plan+'</h2><div '+classAttr+'="image_p"><img src="photo/'+plan+'.png" alt="'+plan+' png" width="200" height="200"></div></div>';
+        result = result + '<div class="duo_table"><div class="modal"><li>Prix d\'un enfant par jour : 10 millions d\'euros</li><li>Prix d\'un adolescent par jour : 12 millions d\'euros</li><li>Prix d\'un adulte par jour : 15 millions d\'euros</li><li>Prix de base pour trois jour : '+prix_plan+' millions d\'euros</li></div><table class="table_result"><tr><td>Type</td><td>Nombre</td><td>Prix en millions d\'euros</td></tr><tr><td>Moins de 12ans</td><td>'+nombre_enfants+'</td><td>'+prix_enfants*nombre_enfants+'</td></tr><tr><td>12-20ans</td><td>'+nombre_ados+'</td><td>'+prix_ados*nombre_ados+'</td></tr><tr><td>Plus de 20ans</td><td>'+nombre_adultes+'</td><td>'+prix_adultes*nombre_adultes+'</td></tr><tr><td>Durée</td><td>'+time+'</td><td>'+prix_time+'</td></tr><tr><td>Total</td><td> </td><td>'+prix_total+'</td></tr></table></div>'
         console.log(result);
         document.getElementById("resultat").innerHTML = result;
     }
