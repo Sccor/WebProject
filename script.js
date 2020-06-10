@@ -111,6 +111,9 @@ function resultat(){
         }else if(plan == "Lune"){
             prix_plan = prix_lune;
             var prix_total = prix_lune + (time-2)*prix_enfants*nombre_enfants + (time-2)*prix_ados*nombre_ados + (time-2)*prix_adultes*nombre_adultes;
+        }else if(plan == "Mars"){
+            prix_plan = prix_mars;
+            var prix_total = prix_mars + (time-2)*prix_enfants*nombre_enfants + (time-2)*prix_ados*nombre_ados + (time-2)*prix_adultes*nombre_adultes;
         }else if(plan == "Jupiter"){
             prix_plan = prix_jupiter;
             var prix_total = prix_jupiter + (time-2)*prix_enfants*nombre_enfants + (time-2)*prix_ados*nombre_ados + (time-2)*prix_adultes*nombre_adultes;
@@ -126,8 +129,8 @@ function resultat(){
         }
         
         var result = '<div class="duo"><h2>'+plan+'</h2><div class="image_p"><img src="photo/'+plan+'.png" alt="'+plan+' png" width="200" height="200"></div></div>';
-        result = result + '<div class="duo_table"><div class="modal"><li>Prix d\'un enfant par jour : 10 millions d\'euros</li><li>Prix d\'un adolescent par jour : 12 millions d\'euros</li><li>Prix d\'un adulte par jour : 15 millions d\'euros</li><li>Prix de base pour trois jour : '+prix_plan+' millions d\'euros</li></div><table class="table_result"><tr><td>Type</td><td>Nombre</td><td>Prix en millions d\'euros</td></tr><tr><td>Moins de 12ans</td><td>'+nombre_enfants+'</td><td>'+prix_enfants*nombre_enfants+'</td></tr><tr><td>12-20ans</td><td>'+nombre_ados+'</td><td>'+prix_ados*nombre_ados+'</td></tr><tr><td>Plus de 20ans</td><td>'+nombre_adultes+'</td><td>'+prix_adultes*nombre_adultes+'</td></tr><tr><td>Durée</td><td>'+time+'</td><td>'+prix_time+'</td></tr><tr><td>Total</td><td> </td><td>'+prix_total+'</td></tr></table><div class="modal"><li>Le transport n\'est pas inclus</li></div></div><div class="duo"><select name="dispo" id="dispo" required><option value="">Disponibilités</option><option value="11/08/2023 - 15/04/2024">11/08/2023 - 15/04/2024</option><option value="25/10/2027 - 05/01/2028">25/10/2027 - 05/01/2028</option><option value="30/05/2028 - 26/11/2028">30/05/2028 - 26/11/2028</option><option value="A partir du 13/03/2029">A partir du 13/03/2029</option></select></div><div class="reserve"><button type="button" id="reserve_button" class="form_button popup" onclick="popFonction()">Reserver<span class="popuptext" id="myPopup">On va pas aller plus loin et vous demander un virement de '+prix_total+' millions d\'euros, ça reste un petit projet et en plus on a pas encore acheté le système solaire.</span></button></div>'
-        document.getElementById("resultat").innerHTML = result;
+        result = result + '<div class="resultat"><div class="duo_table"><div class="modal"><li>Prix d\'un enfant par jour : 10 millions d\'euros</li><li>Prix d\'un adolescent par jour : 12 millions d\'euros</li><li>Prix d\'un adulte par jour : 15 millions d\'euros</li><li>Prix de base pour trois jour : '+prix_plan+' millions d\'euros</li></div><table class="table_result"><tr><td>Type</td><td>Nombre</td><td>Prix en millions d\'euros</td></tr><tr><td>Moins de 12ans</td><td>'+nombre_enfants+'</td><td>'+prix_enfants*nombre_enfants+'</td></tr><tr><td>12-20ans</td><td>'+nombre_ados+'</td><td>'+prix_ados*nombre_ados+'</td></tr><tr><td>Plus de 20ans</td><td>'+nombre_adultes+'</td><td>'+prix_adultes*nombre_adultes+'</td></tr><tr><td>Durée</td><td>'+time+'</td><td>'+prix_time+'</td></tr><tr><td>Total</td><td> </td><td>'+prix_total+'</td></tr></table><div class="modal"><li>Le transport n\'est pas inclus</li></div></div><div class="duo"><select name="dispo" id="dispo" required><option value="">Disponibilités</option><option value="11/08/2023 - 15/04/2024">11/08/2023 - 15/04/2024</option><option value="25/10/2027 - 05/01/2028">25/10/2027 - 05/01/2028</option><option value="30/05/2028 - 26/11/2028">30/05/2028 - 26/11/2028</option><option value="A partir du 13/03/2029">A partir du 13/03/2029</option></select></div><div class="reserve"><button type="button" id="reserve_button" class="form_button popup" onclick="popFonction()">Reserver<span class="popuptext" id="myPopup">On va pas aller plus loin et vous demander un virement de '+prix_total+' millions d\'euros, ça reste un petit projet et en plus on a pas encore acheté le système solaire.</span></button></div></div>'
+        document.getElementById("content_resultat").innerHTML = result;
     }
 }
 document.getElementById('add').onclick = resultat;
@@ -151,8 +154,6 @@ function ecrire_avis(){
         avis = avis.value;
     }
 }
-
-
 
 function popFonction(){
     if(document.getElementById("dispo").checkValidity){
