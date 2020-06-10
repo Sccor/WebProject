@@ -107,15 +107,6 @@ main {
   padding-top: 30px;
 }
 
-/* .btn button{
-  background-color: rgb(175, 66, 15);
-  border: 1px solid white;
-}
-
-.btn button:hover{
-  cursor: pointer;
-} */
-
 .btn button {
   /* background-color: rgba(32, 32, 32, 0.493); */
   display: inline;
@@ -340,6 +331,7 @@ input:invalid, select:invalid {
   margin: 15px 50px ;
   font-size: 1.2vw;
   align-items: center;
+  border-radius: 15%;
 }
 
 .transpo{
@@ -358,11 +350,27 @@ input:invalid, select:invalid {
 .transpo1 .content{
   background-color: rgba(34, 34, 34, 0.95);
   width: 100%;
+  align-self: center;
 }
 
 @media only screen and (max-width: 1138px) {
   .content { padding: 1em; }
+
   .titre{font-size: 35px;} 
+
+  .transpo1{
+    flex-direction: column;
+    margin: 15px 0;
+    padding: 10px;
+  }
+
+  .margin_around p{
+    font-size: 1.8vw;
+  }
+
+  #tp2{
+    flex-direction: column-reverse;
+  }
 }
 
 @media only screen and (max-width: 800px) {
