@@ -27,6 +27,7 @@ html {
 }
 .avis_bg{
   background-image: url("photo/avis.jpeg");
+  background-size: cover;
 }
 .us_bg{
   background-image: url("photo/us2.jpg");
@@ -80,7 +81,8 @@ main {
 }
 
 
-/* css contact */
+/* Page Contact */
+
 .content, .contact{
   background-color: rgba(34, 34, 34, 0.7);
   padding-top: 1em;
@@ -262,6 +264,11 @@ main {
   background-position: -100%;
   cursor: pointer;
 }
+.form_button:active{
+  background-color: #000000;
+  box-shadow: none;
+  cursor: pointer;
+}
 .formu input, select{
   border: 2px black solid;
   border-radius: 7px;
@@ -275,12 +282,21 @@ main {
   justify-self: flex-start;
   align-self: flex-end;
 }
+#resultat{
+  font-family: 'Lexend Mega', sans serif;
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.425);
+  width: 80%;
+  height: 500px;
+  margin: 0 0 50px 0;
+}
+
 /* Qui sommes nous */
 .us_content{
   background-color: rgba(34, 34, 34, 0.726);
 }
 .nous{
-  background-color: #fff;
+
 }
 .nous_img{
   width: 200px;

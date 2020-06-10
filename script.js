@@ -42,7 +42,6 @@ window.onscroll = function () {
     }
  };
 
-
 document.querySelector('.raccourci').onclick=function(e){
     e.preventDefault();
     document.querySelector('.nav_right').classList.toggle('is_open');
@@ -61,3 +60,25 @@ function show_info(id){
 function contact_form(){
     alert("Votre réponse a bien été envoyée !");
 }
+
+function resultat(){
+    console.log("HEREEE");
+    // if(document.getElementById("prenom") == null){
+    //     let prenom = ""; 
+    // }
+    var classAttr = "class";
+    let prenom = document.getElementById("prenom").value;
+    let nom = document.getElementById("nom").value;
+    let email = document.getElementById("email").value;
+    let plan = document.getElementById("planete").value;
+    let time = document.getElementById("time").value;
+    let nombre_enfants = document.getElementById("nombre_enfants").value;
+    let nombre_ados = document.getElementById("nombre_ados").value;
+    let nombre_adultes = document.getElementById("nombre_adultes").value;
+    console.log(plan);
+
+    var result = '<h1>'+plan+'</h1><div '+classAttr+'="image_p"><img src="photo/'+plan+'.png" alt="'+plan+' png" width="200" height="200"></div>';
+    console.log(result);
+    document.getElementById("resultat").innerHTML = result;
+}
+document.getElementById('add').onclick = resultat;
