@@ -132,26 +132,6 @@ function resultat(){
 }
 document.getElementById('add').onclick = resultat;
 
-function ecrire_avis(){
-    var today = new Date();
-    String(today.getDate()).padStart(2, '0');
-    String(today.getMonth()+1).padStart(2, '0');
-    String(today.getFullYear()).padStart(2, '0');
-
-    var prenom = document.getElementById("prenom");
-    var planete = document.getElementById("planete");
-    var titre_avis = document.getElementById("titre_avis");
-    var avis = document.getElementById("msg_avis");
-
-    if(prenom.checkValidity() && planete.checkValidity() && avis.checkValidity()){
-        today = today.value;
-        prenom = prenom.value;
-        planete = planete.value;
-        titre_avis = titre_avis.value;
-        avis = avis.value;
-    }
-}
-
 
 
 function popFonction(){
