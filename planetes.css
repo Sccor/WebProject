@@ -47,7 +47,20 @@
   align-self: center;
   margin: 0 40px 0 50px;
 }
-
+.texte_info{
+  font-family: 'Lexend Mega', sans-serif;
+  font-size: 16px;
+  max-width: 350px;
+  max-height: 350px;
+  align-self: center;
+  margin: 0 40px 0 50px;
+}
+.son{
+  font-family: 'Lexend Mega', sans-serif;
+  font-size: 9px;
+  align-self: flex-start;
+  margin: 0 0 0 5px;
+}
 /* MERCURE*/
 .mercure{
   background: linear-gradient(65deg, rgb(34, 34, 34) 85%, rgba(255, 255, 255, 0) 15%);
@@ -78,9 +91,9 @@
   justify-content: center;
 }
 .info_mercure{
-  background-color:rgb(34, 34, 34);
+  background-color:rgba(34, 34, 34, 0.6);
   width: 50%;
-  margin: 0;
+  margin: 10px 0 10px 0;
   overflow: auto;
   text-align: center;
   display: none;
@@ -123,9 +136,9 @@
   max-width: 500px;
 }
 .info_venus{
-  background-color:rgb(202, 64, 0);
+  background-color:rgba(202, 64, 0, 0.6);
   width: 50%;
-  margin: 0;
+  margin: 10px 0 10px 0;
   overflow: auto;
   text-align: center;
   display: none;
@@ -174,9 +187,9 @@
   max-width: 500px;
 }
 .info_lune{
-  background-color:rgb(165, 165, 165);
+  background-color:rgba(165, 165, 165, 0.7);
   width: 50%;
-  margin: 0;
+  margin: 10px 0 10px 0;
   overflow: auto;
   text-align: center;
   display: none;
@@ -214,9 +227,9 @@
   max-width: 500px;
 }
 .info_mars{
-  background-color:rgb(167, 0, 0);
+  background-color:rgba(167, 0, 0, 0.6);
   width: 50%;
-  margin: 0;
+  margin: 10px 0 10px 0;
   overflow: auto;
   text-align: center;
   display: none;
@@ -247,9 +260,9 @@
   max-width: 500px;
 }
 .info_jupiter{
-  background-color:rgb(167, 152, 104);
+  background-color:rgba(167, 152, 104, 0.6);
   width: 50%;
-  margin: 0;
+  margin: 10px 0 10px 0;
   overflow: auto;
   text-align: center;
   display: none;
@@ -287,9 +300,9 @@
   max-width: 500px;
 }
 .info_saturne{
-  background-color:rgb(141, 120, 51);
+  background-color:rgba(141, 120, 51, 0.6);
   width: 50%;
-  margin: 0;
+  margin: 10px 0 10px 0;
   overflow: auto;
   text-align: center;
   display: none;
@@ -320,9 +333,9 @@
   max-width: 500px;
 }
 .info_uranus{
-  background-color:rgb(0, 143, 187);
+  background-color:rgba(0, 143, 187, 0.6);
   width: 50%;
-  margin: 0;
+  margin: 10px 0 10px 0;
   overflow: auto;
   text-align: center;
   display: none;
@@ -361,9 +374,9 @@
   max-width: 500px;
 }
 .info_neptune{
-  background-color:rgb(0, 51, 192);
+  background-color:rgba(0, 51, 192, 0.6);
   width: 50%;
-  margin: 0;
+  margin: 10px 0 10px 0;
   overflow: auto;
   text-align: center;
   display: none;
