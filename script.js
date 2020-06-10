@@ -58,8 +58,12 @@ function show_info(id){
 }
 
 function contact_form(){
-    alert("Votre réponse a bien été envoyée !");
+    if(prenom.checkValidity() && nom.checkValidity() && email.checkValidity() && plan.checkValidity() && time.checkValidity()){
+        alert("Votre réponse a bien été envoyée !");
+    }
 }
+
+document.getElementById('submit').onclick = contact_form;
 
 function resultat(){
     console.log("HEREEE");
@@ -130,3 +134,4 @@ function resultat(){
     }
 }
 document.getElementById('add').onclick = resultat;
+
