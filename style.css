@@ -86,6 +86,7 @@ main {
   padding-top: 1em;
   padding-bottom: 16px;
   text-align: center;
+  margin-bottom: 200px;
 }
 
 .content, .contact form .msg, .contact form .email, .contact form .prenom{
@@ -98,6 +99,41 @@ main {
   border: 2px solid #151515;
   background-color: rgba(34, 34, 34);
   color: white;
+}
+
+.btn{
+  padding-top: 30px;
+}
+
+/* .btn button{
+  background-color: rgb(175, 66, 15);
+  border: 1px solid white;
+}
+
+.btn button:hover{
+  cursor: pointer;
+} */
+
+.btn button {
+  /* background-color: rgba(32, 32, 32, 0.493); */
+  display: inline;
+  border: none;
+  border-radius: 10rem;
+  font-family: 'Lexend Mega', sans-serif;
+  color: rgb(216, 216, 216);
+  box-shadow: 2px 2px rgb(56, 63, 71);
+  font-size: 25px;
+  padding: 20px;
+  background: linear-gradient(#e66465, #9198e5);
+  background-size: 200%;
+  border-radius: 10rem;
+  transition: all .5s ease-in-out;
+}
+
+.btn button:hover{
+  cursor: pointer;
+  color: black;
+  background: linear-gradient(#199b9a  , #ccc788);
 }
 
 /* Page Accueil : articles*/
