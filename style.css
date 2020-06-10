@@ -27,6 +27,7 @@ html {
 }
 .avis_bg{
   background-image: url("photo/avis.jpeg");
+  background-size: cover;
 }
 .us_bg{
   background-image: url("photo/us2.jpg");
