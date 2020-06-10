@@ -218,10 +218,8 @@ main {
   margin: 0 0 50px 0;
   padding: 30px;
   box-sizing: border-box;
-  max-width: 1000px;
-  background-color: rgba(25, 114, 230, 0.8);
+  background-color: rgba(25, 114, 230, 0.445);
   font-family:'Lexend Mega', sans-serif;
-  border-radius: 12%;
 }
 .flex-container {
   display: flex;
@@ -241,6 +239,7 @@ main {
   font-size: 12px;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 .duo h3{
   text-align: center;
@@ -255,7 +254,7 @@ main {
   box-shadow: 2px 2px rgb(56, 63, 71);
   font-size: 25px;
   padding: 20px;
-  background-image: linear-gradient(to right, rgba(83, 92, 104, 0.6) 50%, rgba(119, 0, 255, 0.8) 50%);
+  background-image: linear-gradient(to right, rgba(83, 92, 104, 0.6) 50%, rgba(36, 0, 77, 0.8) 50%);
   background-size: 200%;
   border-radius: 10rem;
   transition: background-position 1s ease-in-out;
@@ -294,13 +293,14 @@ input:invalid, select:invalid {
   margin: 0 0 50px 0;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .resultat{
   display: flex;
+  width: 100%;
   background-color: rgba(255, 255, 255, 0.425);
-  align-items: center;
 }
-.resultat .duo{
+.content_resultat .duo{
   margin: 0 0 0 25px;
 }
 .duo_table{
@@ -370,13 +370,16 @@ input:invalid, select:invalid {
 }
 
 /* transport */
-
-.content_transpo{
+.backg_transpo{
+  width: 100%;
+  margin: 0 auto 500px auto;
+  background-color: rgba(34, 34, 34, 0.7); 
+}
+.big_content_transpo{
   width: 65%;
   margin: 0 auto;
   padding: 2.5em 1em 1em 1em;
   overflow: auto;
-  /* background-color: rgba(34, 34, 34, 0.7); */
   padding-top: 1em;
   padding-bottom: 16px;
   text-align: center;
@@ -384,11 +387,11 @@ input:invalid, select:invalid {
   font-size: 1.7vw;
 }
 
-.content.margin_around{
+.content_transpo.margin_around{
   margin: 15px 50px ;
   font-size: 1.2vw;
   align-items: center;
-  border-radius: 15%;
+  /* border-radius: 15%; */
 }
 
 .transpo{
@@ -404,10 +407,10 @@ input:invalid, select:invalid {
   display: flex;
 }
 
-.transpo1 .content{
-  background-color: rgba(34, 34, 34, 0.95);
+.transpo1 .content_transpo{
   width: 100%;
   align-self: center;
+  border: 2px solid white;
 }
 
 
@@ -447,6 +450,7 @@ input:invalid, select:invalid {
   max-width: 1000px;
   font-family:'Lexend Mega', sans-serif;
   border-radius: 12%;
+  border: 1px solid white;
 }
 
 .av input, select{
