@@ -250,7 +250,7 @@ iframe{
 }
 /* JUPITER */
 .jupiter{
-  background: linear-gradient(65deg, rgb(167, 152, 104) 85%, rgba(255, 255, 255, 0) 15%);
+  background: linear-gradient(65deg, rgb(241, 202, 133) 85%, rgba(255, 255, 255, 0) 15%);
   width: 100%;
   padding: 0;
   margin: 0;
@@ -274,7 +274,7 @@ iframe{
   max-width: 500px;
 }
 .info_jupiter{
-  background-color:rgba(167, 152, 104, 0.6);
+  background-color:rgba(241, 202, 133, 0.6);
   width: 70%;
   margin: 10px 0 40px 0;
   overflow: auto;
@@ -420,7 +420,7 @@ iframe{
   .venus{background-color: rgb(202, 64, 0);}
   .lune{background-color: rgb(165, 165, 165);}
   .mars{background-color: rgb(167, 0, 0);}
-  .jupiter{background-color: rgb(167, 152, 104);}
+  .jupiter{background-color: rgb(241, 202, 133);}
   .saturne{background-color: rgb(141, 120, 51);}
   .uranus{background-color: rgb(0, 143, 187);}
   .neptune{background-color: rgb(0, 51, 192);}
