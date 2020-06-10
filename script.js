@@ -2,7 +2,6 @@ var rellax = new Rellax('.rellax', {center: true});
 
 window.onscroll = function () {
     var scrollVar = document.documentElement.scrollTop;
-    this.console.log(scrollVar);
     if(document.querySelector('#but1') != null || document.querySelector('#but2') != null || document.querySelector('#but3') != null){
         if (scrollVar >= 100 && scrollVar <= 200) {
             document.querySelector('#but1').style.backgroundPosition="-25%";
