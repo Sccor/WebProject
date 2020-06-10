@@ -23,25 +23,49 @@
       <span class="raccourci_span"></span>
     </div>
   </header>
+
+
+
   <main>
     <div class="titre">
       <h1>Vos avis comptent !</h1>
     </div>
-    <div class="planetes1">
-        <div class="content">
-        <h1>
-        PLANETE 1
-        </h1>
-        </div>
-    </div>
-      <div class="planetes2">
-      <div class="content">
-        <h1>
-          PLANETE 2
-        </h1>
-      </div>
-    </div>
+
+    <form id="fo" action="" method="post" class="form">
+     <div class="flex-container">
+       <div>
+         <input type="text" placeholder="Firstname*" id="firstname" name="user_firstname" required>
+       </div>
+       <div>
+         <input type="text" placeholder="Surname*" id="surname" name="user_surname" required>
+       </div>
+       <div>
+         <input type="email" placeholder="E-Mail*" id="email" name="user_mail" required>
+       </div>
+       <div>
+         <select name="role" id="role" class="item">
+           <option value="Role">Planète</option>
+           <option value="Student">Mercure</option>
+           <option value="Teacher">Vénus</option>
+           <option value="Teacher">Lune</option>
+           <option value="Teacher">Mars</option>
+           <option value="Teacher">Jupiter</option>
+           <option value="Teacher">Saturne</option>
+           <option value="Teacher">Uranus</option>
+           <option value="Teacher">Neptune</option>
+         </select>
+       </div>
+     </div> 
+     <div>
+       <button type="button" id="add" class="button">Send(10)</button>
+       <button id="del" class="button">Delete</button>
+     </div>
+   </form>
+
   </main>
+
+
+
   <footer>
     <div class="main_footer">
       <div class="left box">
