@@ -561,6 +561,28 @@ input:invalid, select:invalid {
   .bout_accueil{font-size: 2.5vw;}
   .titre{font-size: 3vw;}
   .ligne1, .ligne2{flex-wrap: wrap;}
+
+  .list_avis{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .av .ligne1, .av .ligne2_avis{
+    flex-direction: column;
+  }
+
+  .av .ligne2_avis #msg_avis{
+    align-items: center;
+  }
+
+  .av .duo{
+    align-items: center;
+  }
+
+  .avis{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 
 @media only screen and (max-width: 690px){
