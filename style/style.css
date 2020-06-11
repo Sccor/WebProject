@@ -405,7 +405,7 @@ input:invalid, select:invalid {
 }
 .modal{
   font-size: 17px;
-  margin: 0 0 20px 0;
+  margin: 15px 0 20px 0;
   max-width: 700px;
 }
 .cent{
@@ -687,6 +687,8 @@ input:invalid, select:invalid {
   .avis{
     width: 90%;
   }
-
+  .ligne_moteur .moteur{
+    margin: 0 15vw 0 15vw;
+  }
 
 }
