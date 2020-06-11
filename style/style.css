@@ -254,7 +254,7 @@ main {
   box-shadow: 2px 2px rgb(56, 63, 71);
   font-size: 25px;
   padding: 20px;
-  background-image: linear-gradient(to right, rgba(83, 92, 104, 0.6) 50%, rgba(36, 0, 77, 0.8) 50%);
+  background-image: linear-gradient(to right, rgba(83, 92, 104, 0.6) 50%, rgba( 255, 64, 69, 0.8) 50%);
   background-size: 200%;
   border-radius: 10rem;
   transition: background-position 1s ease-in-out;
@@ -287,7 +287,6 @@ input:invalid, select:invalid {
 }
 .content_resultat{
   font-family: 'Lexend Mega', sans serif;
-  color: #000000;
   width: 100%;
   margin: 0 0 50px 0;
   display: flex;
@@ -298,7 +297,93 @@ input:invalid, select:invalid {
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.425);
+  /* background-color: rgba(255, 255, 255, 0.425); */
+}
+.r_form_button {
+  background-color: rgba(32, 32, 32, 0.493);
+  display: inline;
+  border: none;
+  border-radius: 10rem;
+  font-family: 'Lexend Mega', sans-serif;
+  box-shadow: 2px 2px rgb(56, 63, 71);
+  font-size: 25px;
+  padding: 20px;
+  background-size: 200%;
+  border-radius: 10rem;
+  transition: background-position 1s ease-in-out;
+}
+.r_form_button:hover{
+  background-position: -100%;
+  cursor: pointer;
+}
+.r_form_button:active{
+  background-color: #000000;
+  box-shadow: none;
+  cursor: pointer;
+}
+.r_Mercure{
+  background-color:rgba(34, 34, 34, 0.6);
+  color: white;
+}
+.r_Mercure .r_form_button {
+  background-image: linear-gradient(to right, rgba(83, 92, 104, 0.6) 50%, rgba(208, 208, 208, 0.8) 50%);
+  color: black;
+}
+.r_Venus{
+  background-color:rgba(202, 64, 0, 0.6);
+  color: rgb(0, 0, 0);
+}
+.r_Venus .r_form_button {
+  background-image: linear-gradient(to right, rgba(83, 92, 104, 0.6) 50%, rgba( 42, 172, 255, 0.8) 50%);
+  color: rgb(216, 216, 216);
+}
+.r_Lune{
+  background-color:rgba(165, 165, 165, 0.7);
+  color: rgb(0, 0, 0);
+}
+.r_Lune .r_form_button {
+  background-image: linear-gradient(to right, rgba(83, 92, 104, 0.6) 50%, rgba(31, 31, 31, 0.8) 50%);
+  color: rgb(216, 216, 216);
+}
+.r_Mars{
+  background-color:rgba(167, 0, 0, 0.6);
+  color: white;
+}
+.r_Mars .r_form_button {
+  background-image: linear-gradient(to right, rgba(83, 92, 104, 0.6) 50%, rgba(255, 206, 70, 0.8) 50%);
+  color: rgb(0, 0, 0);
+}
+.r_Jupiter{
+  background-color:rgba(241, 202, 133, 0.6);
+  color: rgb(0, 0, 0);
+}
+.r_Jupiter .r_form_button {
+  background-image: linear-gradient(to right, rgba(83, 92, 104, 0.6) 50%, rgba( 17, 62, 163, 0.8) 50%);
+  color: rgb(216, 216, 216);
+}
+.r_Saturne{
+  background-color:rgba(141, 120, 51, 0.6);
+  color: rgb(0, 0, 0);
+}
+.r_Saturne .r_form_button {
+  background-image: linear-gradient(to right, rgba(83, 92, 104, 0.6) 50%,	rgba( 62, 78, 182, 0.8) 50%);
+  color: rgb(216, 216, 216);
+}
+.r_Uranus{
+  background-color:rgba(0, 143, 187, 0.6);
+  color: rgb(0, 0, 0);
+}
+.r_Uranus .r_form_button {
+  background-image: linear-gradient(to right, rgba(83, 92, 104, 0.6) 50%, rgba( 255, 64, 69, 0.8) 50%);
+  color: rgb(216, 216, 216);
+}
+.r_Neptune{
+  background-color:rgba(0, 51, 192, 0.6);
+  color: white;
+}
+.r_Neptune .r_form_button {
+  background-image: linear-gradient(to right, rgba(83, 92, 104, 0.6) 50%, rgba( 255, 213, 64, 0.8) 50%);
+  color: rgb(0, 0, 0);
 }
 .content_resultat .duo{
   margin: 0 0 0 25px;
@@ -370,7 +455,7 @@ input:invalid, select:invalid {
   background-color: rgba(34, 34, 34, 0.7);
   padding-top: 1em;
   padding-bottom: 16px;
-  margin-bottom: 50px;
+  margin: 40px 0 50px 0;
   display: flex;
 }
 .content_nous_r{
@@ -381,7 +466,7 @@ input:invalid, select:invalid {
   background-color: rgba(34, 34, 34, 0.7);
   padding-top: 1em;
   padding-bottom: 16px;
-  margin-bottom: 50px;
+  margin: 10px 0 50px 0;
   display: flex;
   flex-direction: row-reverse;
 }
