@@ -76,10 +76,14 @@ footer li a{
     padding-top: 5px;
 }
 
-footer center a:hover{
+footer .credit a:hover{
     color: rgba(25, 114, 230, 0.8);
 }
-
+.credit{
+    text-align: right;
+    margin: 0;
+    font-size: 0.7vw;
+}
 .right h2{
     padding-top: 20px;
 }
@@ -127,5 +131,8 @@ footer center a:hover{
 
     .right h2{
         padding-top: 0px;
+    }
+    .credit{
+        font-size: 2vw;
     }
 }

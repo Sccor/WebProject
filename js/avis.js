@@ -38,7 +38,7 @@ function ecrire_avis(){
         planet.innerHTML = planete;
 
         var date_container = document.createElement("p");
-        date_container.className = "date";
+        date_container.className = "date_avis";
         date_container.innerHTML = ajd;
 
         var signature = document.createElement("p");

@@ -58,11 +58,7 @@
                 <h3>Destination*</h3>
               </div>
             </div>
-            <div class="ligne2">
-              <div class="duo">
-                <input type="number" placeholder="Durée du séjour (en jours)*" id="time" min="3" autocomplete="off" required>
-                <h3>Durée du séjour (minimum 3 jours)*</h3>
-              </div>
+            <div class="ligne1">
               <div class="duo">
                 <input type="number" placeholder="Nombre de moins de 12ans" id="nombre_enfants" min="0" autocomplete="off">
                 <h3>Nombre de moins de 12ans</h3>
@@ -75,6 +71,10 @@
                 <input type="number" placeholder="Nombre de plus de 20ans" id="nombre_adultes" min="1" autocomplete="off" required>
                 <h3>Nombre de plus de 18ans (minimum un adulte)</h3>
               </div>
+            </div>
+            <div class="ligne1">
+              <input type="date" id="depart" value="" min="" class="date" autocomplete="off">
+              <input type="date" id="retour" value="" min="" class="date" autocomplete="off" onclick="get_depart()" required>
             </div>
             <div class="valider">
                 <button type="button" id="add" class="form_button">Valider</button> 
@@ -108,15 +108,30 @@
       </div>
     </div>
     <div>
-      <center>
-        <span class="credit">Crédit image : <a href="https://www.pexels.com/fr-fr/" target="_blank">pexel.com</a></span>
-      </center>
-    </div>
+      <h3 class="credit">Crédit image : <a href="https://www.pexels.com/fr-fr/">pexel.com</a></h3>
+  </div>
   </footer>
   <script defer src="js/script.js"></script>
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <script src="js/rellax.js"></script>
   <script src="js/reserver.js"></script>
+  <script>
+    var today = new Date();
+    let day = String(today.getDate()).padStart(2, '0');
+    let month = String(today.getMonth()+1).padStart(2, '0');
+    let year = String(today.getFullYear()).padStart(2, '0');
+    var date = year + '-' + month + '-' + day;
+    var dateControl = document.getElementById('depart').setAttribute("min", date);
+    var dateControl = document.getElementById('depart').setAttribute("value", date);
+    var in_date = document.getElementById('depart').value;
+
+
+    function get_depart(){
+      date = document.getElementById("depart").value;
+      document.getElementById("retour").setAttribute("min", date);
+    }
+
+  </script>
 </body>
 
 </html>
