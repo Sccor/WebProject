@@ -1,3 +1,10 @@
+
+function getRetour(date, time){
+        const copy = new Date(Number(date));
+        copy.setDate(date.getDate() + time);
+        return copy;
+      }
+
 function resultat(){
     var prix_plan = 0;
     var prix_enfants = 10;
@@ -19,6 +26,17 @@ function resultat(){
     var nombre_enfants = document.getElementById("nombre_enfants").value;
     var nombre_ados = document.getElementById("nombre_ados").value;
     var nombre_adultes = document.getElementById("nombre_adultes").value;
+
+    var today = new Date();
+    let day = String(today.getDate()).padStart(2, '0');
+    let month = String(today.getMonth()+1).padStart(2, '0');
+    let year = String(today.getFullYear()).padStart(2, '0');
+    var ajd = year + '-' + month + '-' + day;
+    console.log("dt :", ajd);
+    console.log("today :", today);
+    var date_retour = getRetour(today, time.value);
+    console.log("date retour :", date_retour);
+
     if(prenom.checkValidity() && nom.checkValidity() && email.checkValidity() && plan.checkValidity() && time.checkValidity()){
         prenom = prenom.value;
         nom = nom.value;
@@ -61,10 +79,12 @@ function resultat(){
             var prix_total = prix_neptune + (time-2)*prix_enfants*nombre_enfants + (time-2)*prix_ados*nombre_ados + (time-2)*prix_adultes*nombre_adultes;
         }
         
-        var result ='<div class="resultat r_'+plan+'"><div class="duo"><h2>'+plan+'</h2><div class="image_p"><img src="style/photo/'+plan+'.png" alt="'+plan+' png" width="200" height="200"></div></div><div class="duo_table"><div class="modal"><li>Prix d\'un enfant par jour : 10 millions d\'euros</li><li>Prix d\'un adolescent par jour : 12 millions d\'euros</li><li>Prix d\'un adulte par jour : 15 millions d\'euros</li><li>Prix de base pour trois jour : '+prix_plan+' millions d\'euros</li></div><table class="table_result"><tr><td>Type</td><td>Nombre</td><td>Prix en millions d\'euros</td></tr><tr><td>Moins de 12ans</td><td>'+nombre_enfants+'</td><td>'+prix_enfants*nombre_enfants+'</td></tr><tr><td>12-20ans</td><td>'+nombre_ados+'</td><td>'+prix_ados*nombre_ados+'</td></tr><tr><td>Plus de 20ans</td><td>'+nombre_adultes+'</td><td>'+prix_adultes*nombre_adultes+'</td></tr><tr><td>Durée</td><td>'+time+'</td><td>'+prix_time+'</td></tr><tr><td>Total</td><td> </td><td>'+prix_total+'</td></tr></table><div class="modal"><li>Le transport n\'est pas inclus</li></div></div><div class="duo"><select name="dispo" id="dispo" required><option value="">Disponibilités</option><option value="11/08/2023 - 15/04/2024">11/08/2023 - 15/04/2024</option><option value="25/10/2027 - 05/01/2028">25/10/2027 - 05/01/2028</option><option value="30/05/2028 - 26/11/2028">30/05/2028 - 26/11/2028</option><option value="A partir du 13/03/2029">A partir du 13/03/2029</option></select></div><div class="reserve"><button type="button" id="reserve_button" class="r_form_button popup cent" onclick="popFonction()">Reserver<span class="popuptext" id="myPopup">On va pas aller plus loin et vous demander un virement de '+prix_total+' millions d\'euros, ça reste un petit projet et en plus on n\'a pas encore acheté le système solaire.</span></button></div></div>'
+        var result ='<div class="resultat r_'+plan+'"><div class="duo"><h2>'+plan+'</h2><div class="image_p"><img src="style/photo/'+plan+'.png" alt="'+plan+' png" width="200" height="200"></div></div><div class="duo_table"><div class="modal"><li>Prix d\'un enfant par jour : 10 millions d\'euros</li><li>Prix d\'un adolescent par jour : 12 millions d\'euros</li><li>Prix d\'un adulte par jour : 15 millions d\'euros</li><li>Prix de base pour trois jour : '+prix_plan+' millions d\'euros</li></div><table class="table_result"><tr><td>Type</td><td>Nombre</td><td>Prix en millions d\'euros</td></tr><tr><td>Moins de 12ans</td><td>'+nombre_enfants+'</td><td>'+prix_enfants*nombre_enfants+'</td></tr><tr><td>12-20ans</td><td>'+nombre_ados+'</td><td>'+prix_ados*nombre_ados+'</td></tr><tr><td>Plus de 20ans</td><td>'+nombre_adultes+'</td><td>'+prix_adultes*nombre_adultes+'</td></tr><tr><td>Durée</td><td>'+time+'</td><td>'+prix_time+'</td></tr><tr><td>Total</td><td> </td><td>'+prix_total+'</td></tr></table><div class="modal"><li>Le transport n\'est pas inclus</li></div></div><div class="duo"><h1>Date de départ</h1><input type="date" id="start" value="'+ajd+'" min="'+ajd+'" class="date"></div> <div class="duo"><h1>Date de retour</h1><div class="retour>'+date_retour+'</div><div class="reserve"><button type="button" id="reserve_button" class="r_form_button popup cent" onclick="popFonction()">Reserver<span class="popuptext" id="myPopup">On va pas aller plus loin et vous demander un virement de '+prix_total+' millions d\'euros, ça reste un petit projet et en plus on n\'a pas encore acheté le système solaire.</span></button></div></div>'
+
         document.getElementById("content_resultat").innerHTML = result;
     }
 }
+
 document.getElementById('add').onclick = resultat;
 
 function popFonction(){

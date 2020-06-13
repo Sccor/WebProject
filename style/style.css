@@ -297,7 +297,6 @@ input:invalid, select:invalid {
   flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  /* background-color: rgba(255, 255, 255, 0.425); */
 }
 .r_form_button {
   background-color: rgba(32, 32, 32, 0.493);
@@ -410,6 +409,15 @@ input:invalid, select:invalid {
 }
 .cent{
   align-self: center;
+}
+.date{
+  border: 2px black solid;
+  border-radius: 7px;
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.719);
+  color: #fff;
 }
 .popup {
   position: relative;
