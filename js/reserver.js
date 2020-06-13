@@ -1,9 +1,16 @@
 
 function getRetour(date, time){
-        const copy = new Date(Number(date));
-        copy.setDate(date.getDate() + time);
-        return copy;
-      }
+    var copy = new Date();
+    console.log("Date : ", date);
+    console.log("copy 1 : ", copy);
+    let day = copy.getDate();
+    time = Number(time);
+    day = day + time;
+    copy.setDate(day);
+    console.log("time : ", day);
+    console.log("copy 2 : ", copy);
+    return copy;
+}
 
 function resultat(){
     var prix_plan = 0;
@@ -32,10 +39,7 @@ function resultat(){
     let month = String(today.getMonth()+1).padStart(2, '0');
     let year = String(today.getFullYear()).padStart(2, '0');
     var ajd = year + '-' + month + '-' + day;
-    console.log("dt :", ajd);
-    console.log("today :", today);
     var date_retour = getRetour(today, time.value);
-    console.log("date retour :", date_retour);
 
     if(prenom.checkValidity() && nom.checkValidity() && email.checkValidity() && plan.checkValidity() && time.checkValidity()){
         prenom = prenom.value;
