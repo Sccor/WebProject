@@ -79,7 +79,7 @@ span.raccourci_span, span.raccourci_span:before, span.raccourci_span:after{
 .raccourci_span:before{top: 12px;}
 .raccourci_span:after{top: -15px;}
   
-@media only screen and (max-width: 1138px) {
+@media only screen and (max-width: 1350px) {
     /* .header { text-align: center; position: relative; }
     .header .container .logo h1 { float: none; margin: 0; }
     .header .nav ul { float: none; margin: auto;} */
@@ -95,7 +95,7 @@ span.raccourci_span, span.raccourci_span:before, span.raccourci_span:after{
         margin: 0;
         transform: translateX(100%);
         transition: all 0.3s ease-in-out;
-        /* background-color: rgba(34, 34, 34, 0.7); */
+        background-color: rgba(34, 34, 34, 0.7);
     }
 
     .raccourci{
