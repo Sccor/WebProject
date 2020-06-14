@@ -591,6 +591,10 @@ input:invalid, select:invalid {
 }
 
 /* transport */
+.image_p{
+  display: flex;
+  align-items: center;
+}
 .backg_transpo{
   width: 100%;
   margin: 0 auto 350px auto;
